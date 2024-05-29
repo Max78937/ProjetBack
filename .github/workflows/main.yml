@@ -33,5 +33,4 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ matrix.environment }}-githubactions-backend
-        slot-name: production
         package: target/*.jar
