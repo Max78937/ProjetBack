@@ -43,7 +43,6 @@ jobs:
     needs: build
     environment:
       name: 'Development'
-      url: ${{ secrets.AZURE_CREDENTIALS }}
 
     steps:
       - name: Download artifact from build job
